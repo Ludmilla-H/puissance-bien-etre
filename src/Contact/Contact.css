@@ -1,0 +1,131 @@
+.contact {
+    height: 110vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+    color: #000;
+    padding: 5rem;
+    background-image: url('src/images/Component11.png');
+  }
+
+  .contact-text h2{
+    font-size: 2.5rem;
+    line-height: 1;
+    font-weight: bold;
+    color: #F8EA18;
+  }
+
+  .contact-text h4{
+    color: white;
+    margin: 18px 0;
+    font-size: 25px;
+    font-weight: 200;
+  }
+  
+  .contact-text p{
+    color: white;
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+  }
+  
+  .list{
+    margin-bottom: 2.8px;
+    list-style: none;
+  }
+  
+  .list li{
+    margin-bottom: 20px;
+  }
+  
+  .list li a{
+    display: block;
+    color: #F8EA18;
+    font-size: 20px;
+    transition: all .45s ease;
+    text-decoration: none;
+
+  }
+  
+  .list li a:hover{
+    color: white;
+    transform: translateX(5px);
+  }
+  
+  .contact-icons i {
+    height: 45px;
+    width: 45px;
+    background: #FFF;
+    color: black;
+    font-size: 22px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-right: 15px;
+    transition: all .45s ease;
+  }
+  
+  .contact-icons i:hover{
+    background: yellow;
+    color: white;
+  }
+  
+  .contact-form form{
+    position: relative;
+  }
+  
+  .contact-form form input,
+  form textarea{
+    width: 100%;
+    padding: 14px;
+    background: white;
+    border: 1px solid #FFF;
+    outline: none;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-form textarea{
+    resize: none;
+    height: 240px;
+  }
+  
+  .contact-form .button {
+    width: 8rem;
+    height: 4rem;
+    margin-top: 1rem;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding: 11px 26px 11px 26px;
+    background-color: transparent;
+    border-width: 0.1rem;
+  }
+
+  .c-button:hover {
+    background: white;
+    cursor: pointer;
+    color: var(--pink);
+    border: 1px solid var(--pink);
+  }
+  
+  
+  .contact-form .submit:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 480px){
+    .contact {
+      grid-template-columns: 1fr;
+      /* transform: scale(0.9); */
+      background-image: none;
+      letter-spacing: -0.05em;
+      line-height: 2rem; /* 12px */
+      height: 160vh;
+    }
+
+
+  }
